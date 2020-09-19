@@ -28,7 +28,7 @@ class Trending extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                               offset: Offset(0.4, 0.4),
-                              color: Colors.black38,
+                              color: Colors.black12,
                               spreadRadius: (0.1)),
                         ]),
                     child: Row(
