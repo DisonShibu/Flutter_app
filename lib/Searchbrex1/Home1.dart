@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app2/dison_icons.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
 
 void main() => runApp(Home());
 class Home extends StatefulWidget {
@@ -109,7 +112,7 @@ class _HomeState extends State<Home> {
                           width: 25,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.only(bottomLeft:Radius.circular(15),topLeft:Radius.circular(30)),
+                            borderRadius: BorderRadius.only(bottomLeft:Radius.circular(30),topLeft:Radius.circular(15)),
                           ),
                         ),
                       ),
@@ -134,7 +137,7 @@ class _HomeState extends State<Home> {
                           width: 25,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.only(bottomRight:Radius.circular(30),topRight:Radius.circular(15)),
+                            borderRadius: BorderRadius.only(bottomRight:Radius.circular(15),topRight:Radius.circular(30)),
                           ),
                         ),
                       ),
@@ -197,13 +200,13 @@ class _HomeState extends State<Home> {
                                 boxShadow: [
                                   BoxShadow(
                                       offset: Offset(-0.4, -0.4),
-                                      color: Colors.green[100],
+                                      color: Colors.black12,
                                       blurRadius: 5,
                                       ),
 
                                   BoxShadow(
                                       offset: Offset(0.4, 0.4),
-                                      color: Colors.green[100],
+                                      color: Colors.black12,
                                       blurRadius: 5,
                                       ),
                                 ]),
@@ -212,7 +215,7 @@ class _HomeState extends State<Home> {
 
                             child:Padding(
                               padding: const EdgeInsets.only(right:230),
-                              child: Icon(Icons.place,color: Colors.green[500],size: 30,),
+                              child:Icon(Dison.location,size: 35,)
                             ),
 
                           ),
@@ -248,13 +251,13 @@ class _HomeState extends State<Home> {
                                 boxShadow: [
                                   BoxShadow(
                                     offset: Offset(-0.4, -0.4),
-                                    color: Colors.green[100],
+                                    color: Colors.black12,
                                     blurRadius: 5,
                                   ),
 
                                   BoxShadow(
                                     offset: Offset(0.4, 0.4),
-                                    color: Colors.green[100],
+                                    color: Colors.black12,
                                     blurRadius: 5,
                                   ),
                                 ]),
@@ -263,7 +266,7 @@ class _HomeState extends State<Home> {
 
                             child:Padding(
                               padding: const EdgeInsets.only(right:230),
-                              child: Icon(Icons.calendar_today,color: Colors.green[500],size: 30,),
+                              child:Icon(MdiIcons.calendarBlankOutline)
                             ),
 
                           ),
@@ -299,13 +302,13 @@ class _HomeState extends State<Home> {
                                 boxShadow: [
                                   BoxShadow(
                                     offset: Offset(-0.4, -0.4),
-                                    color: Colors.green[100],
+                                    color: Colors.black12,
                                     blurRadius: 5,
                                   ),
 
                                   BoxShadow(
                                     offset: Offset(0.4, 0.4),
-                                    color: Colors.green[100],
+                                    color: Colors.black12,
                                     blurRadius: 5,
                                   ),
                                 ]),
@@ -314,7 +317,10 @@ class _HomeState extends State<Home> {
 
                             child:Padding(
                               padding: const EdgeInsets.only(right:230),
-                              child: Icon(Icons.android,color: Colors.green[500],size: 30,),
+                              child:Icon(Dison.user,size:20),
+
+
+
                             ),
 
                           ),
@@ -339,16 +345,16 @@ class _HomeState extends State<Home> {
                         ] ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(right:0,top:30),
+                        padding: const EdgeInsets.only(left:20,top:30),
                         child: Container(
                             height:60,
                             width: 310,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color:Colors.green[600],
+                              color:Colors.green[900],
                             ),
                             child:Padding(
-                              padding: const EdgeInsets.only(left:70,top:15),
+                              padding: const EdgeInsets.only(left:90,top:15),
                               child: Text("Search hotel",style:TextStyle(fontSize:24,color: Colors.white),),
                             )),
                       ),

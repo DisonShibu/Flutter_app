@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:fl'
+import 'package:flutter_app2/Searchbrex1/login.dart';
+import 'package:flutter_app2/main.dart' ;
+import 'package:flutter_app2/size_config.dart';
 
-void main()=> runApp(Myapp());
+void main()=> runApp(Responsive());
 
-class Myapp extends StatefulWidget {
+class Responsive extends StatefulWidget {
   @override
-  _MyappState createState() => _MyappState();
+  _ResponsiveState createState() => _ResponsiveState();
 }
 
-class _MyappState extends State<Myapp> {
+class _ResponsiveState extends State<Responsive> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -20,7 +22,7 @@ class _MyappState extends State<Myapp> {
                     debugShowCheckedModeBanner: false,
                     theme: ThemeData(
                       primaryColor: Colors.white,),
-                    home: Home()
+                    home: login()
                 );
               });
 
