@@ -22,7 +22,7 @@ class _ResponsiveState extends State<Responsive> {
                     debugShowCheckedModeBanner: false,
                     theme: ThemeData(
                       primaryColor: Colors.white,),
-                    home: login()
+                    home: login1()
                 );
               });
 

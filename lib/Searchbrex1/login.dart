@@ -1,20 +1,22 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app2/size_config.dart';
 
-void main() => runApp(login());
-class login extends StatefulWidget {
+
+
+class login1 extends StatefulWidget {
   @override
-  _loginState createState() => _loginState();
+  _login1State createState() => _login1State();
 }
 
-class _loginState extends State<login> {
+class _login1State extends State<login1> {
 
 
    @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner:false,
       home: Scaffold(
+
         body: Container(
             child:Column(
                       children: <Widget>[
@@ -23,8 +25,8 @@ class _loginState extends State<login> {
 
                        child:Container(
 
-                          width: 100*SizeConfig.widthMultiplier,
-                          height:60.5*SizeConfig.heightMultiplier,
+                          width: 360,
+                          height:452,
                           decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                     begin:Alignment.topCenter,
@@ -52,48 +54,48 @@ class _loginState extends State<login> {
                           ),
 
                          child:Padding(
-                           padding:  EdgeInsets.only(top:18.2*SizeConfig.heightMultiplier,left:0),
+                           padding:  EdgeInsets.only(top:130,left:0),
                              child:Column(
                                children: <Widget>[
                                  Padding(
-                                   padding:  EdgeInsets.only(left:35.2*SizeConfig.widthMultiplier),
+                                   padding:  EdgeInsets.only(left:140),
                                    child: Align(
                                      alignment: Alignment.center,
                                      child: Row(
                                        children: <Widget>[
                                          Padding(
-                                           padding: EdgeInsets.all(0.5*SizeConfig.widthMultiplier),
+                                           padding: EdgeInsets.all(1.8),
                                            child: Container(
-                                             height: 10.5*SizeConfig.heightMultiplier,
-                                             width: 6.9*SizeConfig.widthMultiplier,
+                                             height: 75,
+                                             width: 25,
                                              decoration: BoxDecoration(
                                                color: Colors.white,
-                                               borderRadius: BorderRadius.only(topLeft:Radius.circular(4.16*SizeConfig.widthMultiplier),bottomLeft:Radius.circular(8.3*SizeConfig.widthMultiplier)),
+                                               borderRadius: BorderRadius.only(topLeft:Radius.circular(15),bottomLeft:Radius.circular(30)),
                                              ),
                                            ),
                                          ),
 
                                          Padding(
-                                           padding: EdgeInsets.all(0.5*SizeConfig.widthMultiplier),
+                                           padding: EdgeInsets.all(1.8),
                                            child: Container(
 
                                              height: 27,
                                              width: 27,
                                              decoration: BoxDecoration(
                                                color: Colors.white,
-                                               borderRadius: BorderRadius.only(bottomLeft:Radius.circular(4.16*SizeConfig.widthMultiplier),topRight:Radius.circular(4.16*SizeConfig.widthMultiplier)),
+                                               borderRadius: BorderRadius.only(bottomLeft:Radius.circular(15),topRight:Radius.circular(15)),
                                              ),
                                            ),
                                          ),
 
                                          Padding(
-                                           padding: EdgeInsets.all(0.5*SizeConfig.widthMultiplier),
+                                           padding: EdgeInsets.all(1.8),
                                            child: Container(
-                                             height: 10.5*SizeConfig.heightMultiplier,
-                                             width: 6.9*SizeConfig.widthMultiplier,
+                                             height: 75,
+                                             width: 25,
                                              decoration: BoxDecoration(
                                                color: Colors.white,
-                                               borderRadius: BorderRadius.only(topRight:Radius.circular(8.3*SizeConfig.widthMultiplier),bottomRight:Radius.circular(4.16*SizeConfig.widthMultiplier)),
+                                               borderRadius: BorderRadius.only(topRight:Radius.circular(30),bottomRight:Radius.circular(15)),
                                              ),
                                            ),
                                          ),
@@ -105,19 +107,19 @@ class _loginState extends State<login> {
                                    ),
                                  ),
                                  Padding(
-                                   padding: EdgeInsets.only(top:22.7*SizeConfig.heightMultiplier),
-                                   child: Text("Sign in and save",style:TextStyle(fontSize: 2.8*SizeConfig.heightMultiplier,),),
+                                   padding: EdgeInsets.only(top:172),
+                                   child: Text("Sign in and save",style:TextStyle(fontSize: 22,),),
                                    
                                  ),
 
 
                                     Padding(
-                                     padding:  EdgeInsets.only(left:3.6*SizeConfig.widthMultiplier,right:3.6*SizeConfig.widthMultiplier,top:0,bottom: 0),
+                                     padding:  EdgeInsets.only(left:12,right:12,top:0,bottom: 0),
                                      child: Container(
-                                         height:5.2*SizeConfig.heightMultiplier,
-                                         width: 88.8*SizeConfig.widthMultiplier,
+                                         height:40,
+                                         width: 300,
                                          child: FittedBox(
-                                             child: Text("Track prices,organize travel plans and access members-only deals \n with your HotelBooking account.",style:TextStyle(fontSize: 3.9*SizeConfig.heightMultiplier,color:Colors.black12)))),
+                                             child: Text("Track prices,organize travel plans and access members-only deals \n with your HotelBooking account.",style:TextStyle(fontSize: 22,color:Colors.black38)))),
 
                                  )
 
@@ -134,13 +136,13 @@ class _loginState extends State<login> {
                   child:Column(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.only(left: 8.3*SizeConfig.widthMultiplier,right: 8.3*SizeConfig.widthMultiplier,top:5.2*SizeConfig.heightMultiplier),
+                        padding: EdgeInsets.only(left: 30,right: 30,top:40),
                         child: Container(
-                          height: 6.5*SizeConfig.heightMultiplier,
-                           width:83.3*SizeConfig.widthMultiplier,
+                          height: 50,
+                           width:300,
                            decoration: BoxDecoration(
                              color:Colors.white,
-                             borderRadius: BorderRadius.circular(6.9*SizeConfig.widthMultiplier),
+                             borderRadius: BorderRadius.circular(25),
                              boxShadow: [
                                BoxShadow(
                                  offset: Offset(-0.4, -0.4),
@@ -158,15 +160,15 @@ class _loginState extends State<login> {
                           child:Row(
                             children: <Widget>[
                               Padding(
-                                padding:  EdgeInsets.only(left:8.3*SizeConfig.widthMultiplier),
+                                padding:  EdgeInsets.only(left:30),
                                 child: Image.network("https://s3.amazonaws.com/images.hamlethub.com/hh20mediafolder/3913/201601/Google_-G-_Logo.svg.png",
-                                  height: 3.9*SizeConfig.heightMultiplier,
-                                   width: 8.3*SizeConfig.widthMultiplier ,
+                                  height: 30,
+                                   width: 30 ,
                                 ),
                               ),
                               Padding(
-                                padding:  EdgeInsets.only(left:2.7*SizeConfig.widthMultiplier),
-                                child: Text("Continue with Google",style:TextStyle(fontSize:5.55*SizeConfig.widthMultiplier )),
+                                padding:  EdgeInsets.only(left:10),
+                                child: Text("Continue with Google",style:TextStyle(fontSize:20 )),
                               )
 
                             ],
@@ -186,13 +188,13 @@ class _loginState extends State<login> {
                           child:Column(
                             children: <Widget>[
                               Padding(
-                                padding: EdgeInsets.only(left: 8.3*SizeConfig.widthMultiplier,right: 8.3*SizeConfig.widthMultiplier,top:5.2*SizeConfig.heightMultiplier),
+                                padding: EdgeInsets.only(left: 30,right: 30,top:40),
                                 child: Container(
-                                  height: 6.5*SizeConfig.heightMultiplier,
-                                  width:83.3*SizeConfig.widthMultiplier ,
+                                  height: 50,
+                                  width:300 ,
                                   decoration: BoxDecoration(
                                       color:Colors.white,
-                                      borderRadius: BorderRadius.circular(3.2*SizeConfig.heightMultiplier),
+                                      borderRadius: BorderRadius.circular(25),
                                       boxShadow: [
                                         BoxShadow(
                                           offset: Offset(-0.4, -0.4),
@@ -209,16 +211,16 @@ class _loginState extends State<login> {
                                   child:Row(
                                     children: <Widget>[
                                       Padding(
-                                        padding:  EdgeInsets.only(left:8.3*SizeConfig.widthMultiplier),
+                                        padding:  EdgeInsets.only(left:30),
                                         child: Image.network("https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo.png",
-                                          height: 3.9*SizeConfig.heightMultiplier,
-                                          width: 8.3*SizeConfig.widthMultiplier ,
+                                          height: 30,
+                                          width: 30 ,
 
                                         ),
                                       ),
                                       Padding(
-                                        padding:  EdgeInsets.only(left:2.7*SizeConfig.widthMultiplier),
-                                        child: Text("Continue with Facebook",style:TextStyle(fontSize:5.5*SizeConfig.widthMultiplier )),
+                                        padding:  EdgeInsets.only(left:10),
+                                        child: Text("Continue with Facebook",style:TextStyle(fontSize:20 )),
 
                                       )
 
@@ -234,9 +236,9 @@ class _loginState extends State<login> {
 
 
                                         Padding(
-                                          padding: EdgeInsets.only(left:5.5*SizeConfig.widthMultiplier,top:10*SizeConfig.heightMultiplier),
+                                          padding: EdgeInsets.only(left:20,top:76),
                                           child: Container
-                                            (width: 83.3*SizeConfig.widthMultiplier,
+                                            (width: 300,
 
 
                                              child:FittedBox(
@@ -244,22 +246,22 @@ class _loginState extends State<login> {
                                                  children: <Widget>[
                                                    FittedBox
                                                      (
-                                                       child: Text("By signing up you accept our",style:TextStyle(fontSize:5.5*SizeConfig.widthMultiplier,color: Colors.black )
+                                                       child: Text("By signing up you accept our",style:TextStyle(fontSize:20,color: Colors.black )
 
                                                        )),
                                                       FittedBox
                                                      (
-                                                       child: Text("Terms & condition",style:TextStyle(fontSize:5.5*SizeConfig.widthMultiplier,color: Colors.green )
+                                                       child: Text("Terms & condition",style:TextStyle(fontSize:20,color: Colors.green )
 
                                                        ),),
                                                    FittedBox
                                                      (
-                                                       child: Text(" and ",style:TextStyle(fontSize:5.5*SizeConfig.widthMultiplier,color: Colors.black )
+                                                       child: Text(" and ",style:TextStyle(fontSize:20,color: Colors.black )
 
                                                        )),
                                                    FittedBox
                                                      (
-                                                       child: Text("Privacy Policy",style:TextStyle(fontSize:5.5*SizeConfig.widthMultiplier,color: Colors.green )
+                                                       child: Text("Privacy Policy",style:TextStyle(fontSize:20,color: Colors.green )
 
                                                        )),
                                                  ],),
